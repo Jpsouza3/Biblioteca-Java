@@ -5,7 +5,7 @@ public class Livro {
 	private String titulo;
 	private String autor;
 	private int publicacao;
-	private boolean disponivel;
+	private boolean disponivel = true;
 	
 	public Livro(String titulo, String autor, int publicacao) {
 		this.titulo = titulo;
@@ -52,6 +52,6 @@ public class Livro {
 	
 	@Override
 	public String toString() {
-		return "Titulo: " + this.titulo + ", Autor: " + this.autor + ", Ano de publicação: " + this.publicacao;
+		return "Titulo: " + this.titulo + ", Autor: " + this.autor + ", Ano de publicação: " + this.publicacao + ", Disponivel = " this.disponivel;
 	}
 }
